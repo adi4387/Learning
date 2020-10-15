@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GetCourseDetailsResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xmlns="http://example.soap.com/courses"
+                          xsi:schemaLocation="http://example.soap.com/courses course-details.xsd">
+    <CourseDetails>
+        <id>123</id>
+        <name>Spring Soap Demo</name>
+        <description>Learn Soap Basic</description>
+    </CourseDetails>
+</GetCourseDetailsResponse>
