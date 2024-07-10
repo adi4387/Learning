@@ -2,3 +2,5 @@
 soap-demo/.DS_Store
 .DS_Store
 .vscode
+/**/.bin
+/**/*.class
