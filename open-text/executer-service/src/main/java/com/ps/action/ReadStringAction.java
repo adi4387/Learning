@@ -1,14 +1,14 @@
 package com.ps.action;
 
+import java.util.UUID;
 import java.util.concurrent.Callable;
 
-public record ReadStringAction() implements Callable<String> {
+public record ReadStringAction(UUID taskId) implements Callable<String> {
 
     @Override
     public String call() throws Exception {
-        System.out.println(Thread.currentThread().getName() + " has started reading");
-        Thread.sleep(1000);
-        System.out.println(Thread.currentThread().getName() + " has finised reading");
-        return "read String";
+        System.out.println(Thread.currentThread().getName() + " processing + " + taskId);
+        Thread.sleep(10000);
+        return "reading";
     }
 }
